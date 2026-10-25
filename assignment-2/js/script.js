@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 1. Dark Mode & LocalStorage
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
@@ -7,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.add('dark-theme');
         themeToggle.textContent = '☀️ Light Mode';
     }
+
     themeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-theme');
         const isDark = body.classList.contains('dark-theme');
@@ -15,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
     });
 
+    // 2. Live Search & Filter Projects
     const searchInput = document.getElementById('project-search');
     const projectCards = document.querySelectorAll('.project-card');
     const noProjectsMsg = document.getElementById('no-projects-message');
@@ -27,25 +30,24 @@ document.addEventListener('DOMContentLoaded', () => {
             projectCards.forEach(card => {
                 const title = card.querySelector('h3').textContent.toLowerCase();
                 const description = card.querySelector('p').textContent.toLowerCase();
+                
                 if (title.includes(query) || description.includes(query)) {
                     card.style.display = 'block';
                     visibleCount++;
                 } else {
                     card.style.display = 'none';
                 }
+            });
 
-        });
-
-        if (visibleCount === 0) {
+            if (visibleCount === 0) {
                 noProjectsMsg.classList.remove('hidden-message');
-            }
-            else {
+            } else {
                 noProjectsMsg.classList.add('hidden-message');
             }
         });
     }
 
-
+    // 3. Contact Form Validation & Feedback
     const contactForm = document.getElementById('contact-form');
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
@@ -63,8 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const validateEmail = (email) => {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     };
-if (contactForm) 
-    contactForm.addEventListener('submit', (e) => {
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
             let isValid = true;
@@ -87,11 +90,13 @@ if (contactForm)
                 emailInput.classList.add('invalid');
                 isValid = false;
             }
+
             if (!messageInput.value.trim()) {
                 messageError.textContent = 'Please enter a message.';
                 messageInput.classList.add('invalid');
                 isValid = false;
             }
+
             if (!isValid) {
                 formAlert.textContent = 'Please fix the errors in the form above.';
                 formAlert.className = 'alert alert-error';
@@ -101,4 +106,16 @@ if (contactForm)
             submitBtn.disabled = true;
             btnText.textContent = 'Sending...';
             btnSpinner.classList.remove('hidden-message');
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                btnText.textContent = 'Send Message';
+                btnSpinner.classList.add('hidden-message');
 
+                formAlert.textContent = 'Thank you! Your message has been sent successfully.';
+                formAlert.className = 'alert alert-success';
+
+                contactForm.reset();
+            }, 1500);
+        });
+    }
+});
