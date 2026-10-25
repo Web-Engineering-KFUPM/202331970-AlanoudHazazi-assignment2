@@ -32,7 +32,7 @@
                 <div class="search-container">
                     <input type="text" id="project-search" placeholder="🔍 Search projects by title or keyword...">
                 </div>
-                
+
                 <div class="project-grid">
                     <article class="project-card">
                         <h3>SilverNest</h3>
@@ -49,29 +49,38 @@
                         <p>A system utilizing rule-based constraints and local LLM reasoning to detect inconsistencies and validate survey responses in real-time.</p>
                     </article>
                 </div>
+                <p id="no-projects-message" class="hidden-message">No matching projects found.</p>
             </section>
+        
 
             <section id="contact">
                 <h2>Contact Me</h2>
                 <p>Feel free to reach out to me!</p>
 
-                <form action="#" method="POST" id="contact-form">
+                <div id="form-alert" class="alert hidden-message"></div>
+
+                <form id="contact-form" novalidate>
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
+                        <span class="error-text" id="name-error"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
+                        <span class="error-text" id="email-error"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" required></textarea>
+                        <span class="error-text" id="message-error"></span>
                     </div>
-
-                    <button type="submit">Send Message</button>
+                    <button type="submit" id="submit-btn">
+                        <span id="btn-text">Send Message</span>
+                        <span id="btn-spinner" class="spinner hidden-message"></span>
+                    </button>
                 </form>
             </section>
 
