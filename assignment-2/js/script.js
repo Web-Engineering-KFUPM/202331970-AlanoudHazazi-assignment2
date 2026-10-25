@@ -98,3 +98,7 @@ if (contactForm)
                 return;
             }
 
+            submitBtn.disabled = true;
+            btnText.textContent = 'Sending...';
+            btnSpinner.classList.remove('hidden-message');
+
