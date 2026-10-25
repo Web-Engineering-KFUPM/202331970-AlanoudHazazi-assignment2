@@ -44,3 +44,57 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+
+    const contactForm = document.getElementById('contact-form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    
+    const nameError = document.getElementById('name-error');
+    const emailError = document.getElementById('email-error');
+    const messageError = document.getElementById('message-error');
+
+    const formAlert = document.getElementById('form-alert');
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const btnSpinner = document.getElementById('btn-spinner');
+
+    const validateEmail = (email) => {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    };
+if (contactForm) 
+    contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            let isValid = true;
+            [nameError, emailError, messageError].forEach(el => el.textContent = '');
+            [nameInput, emailInput, messageInput].forEach(el => el.classList.remove('invalid'));
+            formAlert.className = 'alert hidden-message';
+
+            if (!nameInput.value.trim()) {
+                nameError.textContent = 'Please enter your name.';
+                nameInput.classList.add('invalid');
+                isValid = false;
+            }
+
+            if (!emailInput.value.trim()) {
+                emailError.textContent = 'Please enter your email address.';
+                emailInput.classList.add('invalid');
+                isValid = false;
+            } else if (!validateEmail(emailInput.value.trim())) {
+                emailError.textContent = 'Please enter a valid email address.';
+                emailInput.classList.add('invalid');
+                isValid = false;
+            }
+            if (!messageInput.value.trim()) {
+                messageError.textContent = 'Please enter a message.';
+                messageInput.classList.add('invalid');
+                isValid = false;
+            }
+            if (!isValid) {
+                formAlert.textContent = 'Please fix the errors in the form above.';
+                formAlert.className = 'alert alert-error';
+                return;
+            }
+
