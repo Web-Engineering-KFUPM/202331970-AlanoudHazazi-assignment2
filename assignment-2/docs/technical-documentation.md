@@ -1,25 +1,38 @@
-# Technical Documentation
+# Technical Documentation – Assignment 2
 
-## 1. Architecture Overview
-This portfolio is a static front-end web application built using vanilla web technologies (HTML5, CSS3, and JavaScript). It does not rely on any external frameworks or libraries, ensuring fast load times and a lightweight footprint.
+## 1. System Architecture & Features
+This application is built as a dynamic, client-side portfolio using standard HTML5, CSS3, and modern ECMAScript (Vanilla JavaScript). It operates without external frameworks, maximizing execution speed and maintaining zero third-party dependencies.
 
-## 2. Directory Structure
-The project follows a standard and logical file organization:
-- `/css/styles.css`: Contains all styling, responsive design rules, and theme variables.
-- `/js/script.js`: Contains the logic for interactivity (Theme toggle).
-- `/assets/images/`: Stores all static image assets (profile picture, project previews).
-- `/docs/`: Contains project documentation (AI Usage Report and Technical Documentation).
-- `index.html`: The main entry point structuring the content.
+---
 
-## 3. Styling & Layout Approach
-- **CSS Grid:** Utilized in the Projects section (`.project-grid`). The rule `grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))` creates a fluid, responsive layout that automatically adjusts the number of columns based on the viewport width without needing complex media queries.
-- **CSS Flexbox:** Applied to the Navigation (`nav`), About section (`.about-content`), and Contact Form (`.form-group`) to manage alignment, spacing, and vertical/horizontal centering efficiently.
-- **Image Optimization:** The `object-fit: cover;` property is applied to project images to maintain a consistent aspect ratio and prevent distortion regardless of the source image dimensions.
+## 2. Dynamic Features & State Management
 
-## 4. Interactivity (JavaScript)
-The single interactive feature is a Light/Dark theme toggle.
-- **State Management:** The current theme state is managed by toggling a `.dark-theme` class on the `<body>` element.
-- **Data Persistence:** The user's theme preference is saved to the browser's `localStorage` (`localStorage.setItem`). Upon page reload, the script checks `localStorage.getItem('theme')` to reapply the saved preference, ensuring a consistent user experience.
+### A. Dark/Light Theme Switching (`localStorage`)
+- **Implementation:** Managed via JavaScript class manipulation on the `<body>` element (`.dark-theme`).
+- **Persistence:** The chosen theme state is written to the browser's persistent storage using `localStorage.setItem('theme', isDark ? 'dark' : 'light')`.
+- **Initialization:** Upon `DOMContentLoaded`, the script evaluates `localStorage.getItem('theme')` to reapply saved user preferences instantly, preventing visual flicker during page loads.
 
-## 5. CSS Custom Properties (Variables)
-Dark mode styling is implemented efficiently by redefining CSS variables based on the active class on the body. Instead of rewriting components, styles inherit the active colors dynamically (e.g., overriding hardcoded hex colors with specific dark-theme overrides for headers, inputs, and backgrounds).
+### B. Live Project Filtering (Search Bar)
+- **Implementation:** An active event listener monitors the `input` event on `#project-search`.
+- **Matching Algorithm:** Query strings are normalized (`toLowerCase().trim()`) and evaluated against the `<h3>` (title) and `<p>` (description) content of each `.project-card` using `String.prototype.includes()`.
+- **DOM Updates:** Matching elements retain default layout display styles (`display: block`), while non-matching elements are hidden (`display: none`). An empty-state message (`#no-projects-message`) renders dynamically when the visible count equals zero.
+
+---
+
+## 3. Form Validation, Error Handling & Feedback
+
+### A. Input Validation Logic
+- **Prevention:** Form submission default behavior is interrupted using `e.preventDefault()`.
+- **Validation Rules:**
+  - **Required Fields:** Ensures `Name`, `Email`, and `Message` inputs are non-empty after trimming whitespace.
+  - **Email Format:** Validated against a standard Regular Expression pattern (`/^[^\s@]+@[^\s@]+\.[^\s@]+$/`).
+- **Visual Feedback:** Invalid fields dynamically receive an `.invalid` CSS class (triggering red border styling) and display contextual error text beneath the input field.
+
+### B. Asynchronous Feedback Simulation
+- **Loading State:** Upon successful validation, the submit button locks (`disabled = true`), displays a text update ("Sending..."), and shows a CSS keyframe animation spinner (`.spinner`).
+- **Completion Alert:** A 1.5-second `setTimeout` simulates network latency, clearing inputs via `form.reset()` and presenting a confirmation banner (`.alert-success`).
+
+---
+
+## 4. Performance & CSS Transitions
+- **Smooth UX:** Interactivity utilizes GPU-accelerated CSS properties (`transform: translateY(-6px)`, `opacity`, `transition: 0.3s ease`) to deliver fluid visual transitions without rendering bottlenecks.
