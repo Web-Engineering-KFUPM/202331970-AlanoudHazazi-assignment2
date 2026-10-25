@@ -39,6 +39,7 @@ nav ul li a {
     color: #f8fafc;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 nav ul li a:hover {
@@ -53,11 +54,13 @@ nav ul li a:hover {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 #theme-toggle:hover {
     background-color: #0284c7;
     color: #fff;
+    transform: scale(1.05);
 }
 
 /* 3. Main Container & Sections */
@@ -105,6 +108,20 @@ section h2 {
 }
 
 /* 5. Projects Section */
+.search-container {
+    margin-bottom: 1.5rem;
+}
+#project-search {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+}
+#project-search:focus {
+    border-color: #38bdf8;
+}
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
