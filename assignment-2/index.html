@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Web Page</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+            <button id="theme-toggle">Toggle Theme</button>
+        </nav>
+
+        <main>  
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+                    <div class="about-text">
+                        <p>Hello my name is Alanoud! I'm a web developer with a passion for creating interactive and user-friendly websites. I enjoy learning new technologies and improving my skills.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">  
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>SilverNest</h3>
+                        <p>SilverNest connects independent seniors and family caregivers with local volunteers for daily, non-medical errands and companionship. The platform enables simple task requests, proximity-based volunteer matching, and real-time updates for family peace of mind.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>KFUPM Clinic System 2</h3>
+                        <p>A command-line management application powered by custom data structures in Java to efficiently handle clinic operations.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Semantic Guardian 3</h3>
+                        <p>A system utilizing rule-based constraints and local LLM reasoning to detect inconsistencies and validate survey responses in real-time.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me!</p>
+
+                <form action="#" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy; 2024 My Web Page. All rights reserved.</p>
+        </footer>
+        <!-- link JavaScript file-->
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>
