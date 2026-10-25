@@ -296,6 +296,11 @@ body.dark-theme #contact {
     background-color: #1e293b;
     border-color: #334155;
 }
+body.dark-theme #project-search {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    border-color: #475569;
+}
 
 body.dark-theme .project-card p {
     color: #94a3b8;
