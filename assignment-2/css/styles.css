@@ -240,10 +240,19 @@ button[type="submit"] {
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
 }
 
 button[type="submit"]:hover {
     background-color: #059669;
+}
+
+button[type="submit"]:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
 }
 
 /* 7. Footer */
