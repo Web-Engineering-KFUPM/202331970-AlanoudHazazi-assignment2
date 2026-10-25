@@ -1,0 +1,450 @@
+25 /10 /2026، 11:53 
+م
+Web Dev Assignment 2 Guide
+Web Dev Assignment 2 Guide
+https://gemini.google.com/app/2825abb75e524042
+User prompt: Hi! I working on Assignment 2 for my web dev course (Interactive Features). Can you explain to me simple what I need to do for this
+assignment? Also how I can add JavaScript interactivity like Dark Mode and search bar for my projects? Assignment 2 – Interactive Features
+Objective In this assignment, you will continue developing your personal portfolio website by improving the work you completed in Assignment 1.
+Your main goal is to make your website more interactive and modern. In this assignment, you are required to: - Use your Assignment 1 portfolio
+as the starting point - - Add interactivity (for example: buttons, dynamic content, or user actions) - Apply modern web development techniques 
+Improve the user experience using JavaScript and dynamic behavior - Use AI-assisted tools when appropriate to enhance your work By the end
+of this assignment: You should have a portfolio website that is more interactive, more engaging, and clearly shows progress beyond Assignment
+1. Instructions 1. Repository Setup - Create a public GitHub repository named id-name-assignment2 - (replace id with your student ID and name
+with your first and last name with no space). - Maintain a clear folder structure, meaningful commit history, and a well-written README.md. - Use
+branches (recommended). Suggested Structure assignment-2/ ├── README.md ├── index.html ├── css/ │ └── styles.css ├── js/ │ └──
+script.js ├── assets/ │ └── images/ ├── docs/ │ ├── ai-usage-report.md │ └── technical-documentation.md └── .gitignore 2. Dynamic
+Content Your web application must include at least one dynamic feature where the content changes based on user interaction. Requirement
+Implement at least ONE of the following (or something similar): - Display content that updates based on user input (e.g., a greeting using a name
+or time of day) - Filter or sort content (e.g., show specific projects or reorder them) - Switch between sections using buttons or tabs (e.g., About,
+Projects, Contact) - Show or hide content when clicked (expand / collapse sections) - Filter content live while typing (simple search functionality)
+You do not need to implement all options. Choose one feature that fits your portfolio website. Guideline - The feature must respond to user
+actions (click, type, select, etc.) - It should make the site more interactive and useful - It should not be purely decorative Tip Explore professional
+websites (e.g., Apple, Airbnb) and observe how content changes when users interact. Even a simple interactive feature is sufficient if it works
+correctly and is clearly implemented. 3. Data Handling Your project must demonstrate basic data handling using JavaScript. Requirement
+Implement at least ONE of the following: - Use localStorage to save user preferences (e.g., dark or light theme , name, settings) - Fetch and
+display data from a public API (e.g., books, music, sports, fun facts) - Create a simple form that validates user input and shows a confirmation
+message Guideline - If data fails to load, show a clear and friendly error message - Do not leave the user without feedback 4. Animation and
+Transitions Use simple animations or transitions to improve the user experience. Requirement Add at least ONE of the following: - Smooth
+transitions when switching sections - Hover effects on buttons, cards, or links - Fade-in or slide-in effects for text or images - Animated success or
+error messages Guideline - Animations should be smooth and helpful - Avoid distracting or heavy effects 5. Error Handling and User Feedback
+Your application must clearly communicate with the user. Requirement Include basic user feedback, such as: - Error messages for invalid or
+empty form inputs - Friendly messages when an API request fails - A loading indicator (e.g., “Loading…”) when fetching data - Empty state
+messages (e.g., “No projects found”) Guideline - Always tell the user what happened and what to do next 6. AI Enhancement You must use AI
+tools to assist with at least one part of this assignment. List the AI tools you used (e.g., ChatGPT, Copilot) and explain how you used each tool
+during the assignment. - Recommended AI Tools - GitHub Copilot → Code completion & generation - ChatGPT / Claude → Problem-solving &
+explanations - Cursor → AI-powered code editor - Replit → AI-assisted online IDE - AWS CodeWhisperer → AI code generation Acceptable AI
+Uses - Code generation or suggestions - Debugging help - Code review or improvements - Writing documentation or text - UI/UX or accessibility
+suggestions Requirements - You must understand any AI-generated code - You must edit or improve the AI output - AI should support learning,
+not replace it Documentation (Required) You must include a report at:docs/ai-usage-report.md AI Usage Declaration (Required) AI use is
+encouraged in this assignment, and it must be fully declared. - In docs/ai-usage-report.md, also include: - Usage Log: one row per AI
+conversation (C01, C02, ...) or AI-generated artifact (A01, A02, ...): - IDTool (model)DatePurposeFiles affectedWhat you changed and how you
+verified it - Declaration, with your name, ID, and date: - I declare that this report and the attached evidence document all of my AI use in this
+assignment, with complete and unedited conversations, and that I understand and can explain all the code I submitted. I understand that
+undeclared AI use or a false declaration will be treated as plagiarism according to KFUPM regulations. - Submit an AI Evidence ZIP on
+Blackboard with your repository link, named id-name-assignment2-ai-evidence.zip. It must contain the full conversations (conversations/) and the
+intermediate artifacts, i.e., what the AI produced before your edits (artifacts/). Do not commit the logs or the ZIP to your repository. - Credit AI in
+the commit message of commits containing AI-assisted code, e.g., Assisted-by: ChatGPT (GPT-x). - If you did not use AI, state that explicitly in
+the report. The AI Integration criteria in the rubric will not be awarded. - Missing declaration or evidence = 0 for this assignment. A false
+declaration or undeclared AI use will be treated as a plagiarism case according to KFUPM regulations. - See the AI Usage Guidelines for what
+counts as AI use and how to export conversations. 7. Documentation Your README.md should include: - Project description - Setup instructions
+(how to run locally) - Short summary of AI use (detailed in ai-usage-report.md) - Optional live deployment link (GitHub Pages, Netlify, Vercel) 8.
+Submission Process 1. Create a new GitHub repository for the assignment. 2. Develop and test all required features. 3. Update README.md and
+technical documentation. 4. Review to ensure all requirements are met. 5. Submit your repository link and AI Evidence ZIP through Blackboard.
+9. Academic Integrity Allowed - AI-assisted tools - Peer discussion of ideas - Sharing setup guides or references - High-level feedback Not
+Allowed - Copying code from classmates - Plagiarism or misrepresentation - Unauthorized collaboration - Submitting unmodified AI output as
+your own Always be transparent: document how you used AI or peer help, and ensure you understand your solution. 10. Grading Rubric The AI
+Usage Declaration is a mandatory requirement. Without it, the grade for this assignment is 0, regardless of the rubric below. The submission will
+be graded out of 100 points, divided as follows: Criteria (points)Excellent (90–100%)Very Good (80–89%)Good (70–79%)Acceptable (60
+69%)Poor (0–59%)Technical ImplementationFunctionality (10)All required features fully implemented; website functional.Most features work;
+minor issues.Some features missing/ partially working.Few features working; major gaps.Features missing or site broken.Code Quality (10)Clean,
+readable, well-structured, consistently formatted.Mostly clean; minor inconsistencies.Functional but messy/ inconsistent.Poor structure; minimal
+comments.Disorganized or incomplete.Performance (10)Efficient, optimized; loads quickly across devices.Mostly efficient; minor
+slowdowns.Adequate performance; noticeable delays.Performance issues in several areas.Very slow/ inefficient.Compatibility (10)Works
+seamlessly across major browsers/ devices.Works on most platforms; minor issues.Works but limited compatibility.Many compatibility
+problems.Not compatible across platforms.DocumentationREADME Quality (10)Comprehensive, professional, well-structured.Mostly complete;
+minor gaps.Basic README; limited details.Minimal README.README missing/ unusable.Setup Instructions (10)Easy-to-follow installation/
+usage guides.Clear but missing minor detail.Exists but not fully clear.Minimal/ confusing instructions.Missing instructions.Technical Details
+(10)Proper technical documentation provided.Mostly complete; minor gaps.Basic details with gaps.Minimal documentation.No technical
+details.User Experience (10)Clear, user-friendly guidance/ explanations.Mostly clear; some gaps.Adequate but not user-friendly.Minimal focus on
+user clarity.No UX guidance.AI IntegrationEffective Use (5)AI tools used meaningfully and appropriately.AI tools used effectively; minor gaps.AI
+used but not well aligned.Minimal/ shallow AI use.No AI use.Documentation (5)Clear and complete documentation of AI usage.Mostly clear; minor
+gaps.Exists but lacks detail.Minimal documentation.No documentation.Understanding (5)Strong comprehension of AI outputs/ adaptations.Good
+understanding; minor gaps.Partial understanding shown.Weak comprehension.No understanding demonstrated.Innovation (5)Creative,
+innovative use of AI for problem-solving.Some creativity and innovation.Limited innovation.Minimal innovation.No innovation. Notes - Keep this
+assignment focused on adding interactivity and usability rather than trying to build a perfect design. - This assignment is worth 2% of your grade.- Use AI responsibly, your documentation should clearly explain how AI supported your work and learning process. - The features you build here
+will become part of your professional portfolio website in later assignments, so aim for clarity, good structure, and functionality you can expand
+1/8
+https://gemini.google.com/app/2825abb75e524042
+25 /10 /2026، 11:53 
+م
+Web Dev Assignment 2 Guide
+on. Wrapping Up Think of these guidelines as a help guide with ideas to get you started. You don’t have to follow every example, feel free to
+explore and shape the web application in a way that reflects your own interests. Creativity and originality are welcome as long as the core
+requirements of the assignment are met. Most importantly, enjoy building, experimenting, and making the web application your own!
+Response: To complete Assignment 2: Interactive Features, you need to take your existing portfolio website and add interactive, user-focused
+JavaScript features, clean up your documentation, and submit your AI usage evidence.
+1. What You Need to Do (Simplified Overview)
+1. Repository & File Setup:
+Make sure your GitHub repository is named id-name-assignment2.
+Organize your project using the suggested structure: place code in css/ and js/, images in assets/images/, and reports in docs/.
+2. Dynamic Content (Choose 1+):
+Add a feature where content changes based on user action. A live search bar that filters your projects as you type is a great choice
+here.
+3. Data Handling (Choose 1+):
+Store user preferences or data in JS. A Dark Mode toggle saved in localStorage fulfills this.
+4. Animation & Transitions:
+Add simple CSS animations, such as smooth hover states on cards/buttons, or fade-in effects when elements load or appear.
+5. Error Handling & Feedback:
+Give feedback to the user, like showing an "Empty state" message when a search query matches no projects (e.g., "No projects
+found") or validating form inputs.
+6. AI Usage & Documentation:
+Log every AI interaction in docs/ai-usage-report.md using the required table format and include the mandatory signed declaration.
+Export conversation logs (.json or .txt) and early code outputs into a ZIP file named id-name-assignment2-ai-evidence.zip to
+upload to Blackboard.
+Include credit in your git commit messages (e.g., Assisted-by: ChatGPT).
+2. Implementing JavaScript Interactivity
+Here is how you can implement both Dark Mode (with localStorage) and a Live Search Bar into your HTML, CSS, and JS.
+Step 1: Update index.html
+Add an <input> search field above your project grid, an empty search message container, and ensure your project titles are tagged so the script
+can search them.
+<!-- Inside <section id="projects"> -->
+<h2>My Projects</h2>
+<!-- 1. Search Bar Input -->
+<div class="search-container">
+    <input type="text" id="project-search" placeholder="Search projects by title..." />
+</div>
+<!-- 2. Empty State Message (hidden by default) -->
+<p id="no-projects-msg" class="hidden">No projects found.</p>
+<div class="project-grid" id="project-grid">
+    <article class="project-card">
+        <h3>SilverNest</h3>
+        <p>SilverNest connects independent seniors and family caregivers with local volunteers...</p>
+    </article>
+    <article class="project-card">
+        <h3>KFUPM Clinic System 2</h3>
+        <p>A command-line management application powered by custom data structures in Java...</p>
+    </article>
+    <article class="project-card">
+2/8
+https://gemini.google.com/app/2825abb75e524042
+25 /10 /2026، 11:53 
+م
+Web Dev Assignment 2 Guide
+        <h3>Semantic Guardian 3</h3>
+        <p>A system utilizing rule-based constraints and local LLM reasoning to detect inconsistencies...</p>
+    </article>
+</div>
+Step 2: Update css/styles.css
+Add styles for the search input, transitions, smooth animations, and the hidden state for your empty search message.
+/* Smooth transition for theme switching & animations */
+body, .project-card, nav, #contact {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Card Hover Transition */
+.project-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+/* Search Bar Styling */
+.search-container {
+    margin-bottom: 1.5rem;
+}
+#project-search {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+#project-search:focus {
+    border-color: #38bdf8;
+}
+/* Dark theme adaptation for search bar */
+body.dark-theme #project-search {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border-color: #475569;
+}
+/* Utility Class to hide elements */
+.hidden {
+    display: none;
+}
+Step 3: Implement Interactivity in js/script.js
+This script handles both Theme Toggling with localStorage persistence and Live Project Search with Feedback.
+document.addEventListener('DOMContentLoaded', () => {
+    // ========================================================
+    // 1. Theme Toggle with localStorage (Data Handling)
+    // ========================================================
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    // Load saved preference from localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+    }
+3/8
+https://gemini.google.com/app/2825abb75e524042
+25 /10 /2026، 11:53 
+م
+Web Dev Assignment 2 Guide
+    // Toggle theme on button click
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const isDark = body.classList.contains('dark-theme');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    }
+    // ========================================================
+    // 2. Live Project Search & Empty State (Dynamic Content)
+    // ========================================================
+    const searchInput = document.getElementById('project-search');
+    const projectCards = document.querySelectorAll('.project-card');
+    const noProjectsMsg = document.getElementById('no-projects-msg');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            let visibleCount = 0;
+            projectCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                // Check if title or description matches the search term
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            // Display friendly "No projects found" message if 0 matches
+            if (visibleCount === 0) {
+                noProjectsMsg.classList.remove('hidden');
+            } else {
+                noProjectsMsg.classList.add('hidden');
+            }
+        });
+    }
+});
+3. Checklist Before Submitting
+[ ] Push code to GitHub repository named id-name-assignment2.
+[ ] Verify folder layout matches the required directory tree.
+[ ] Test that Dark Mode remembers state after page refreshes (localStorage).
+[ ] Test that typing in the search bar filters cards dynamically and shows "No projects found" when matching text is missing.
+[ ] Complete docs/ai-usage-report.md with the full usage log table and signed declaration statement.
+[ ] Pack exported chat files and unedited AI snippets into id-name-assignment2-ai-evidence.zip and upload to Blackboard.
+User prompt: I need to update my css/styles.css file I want to add styling for project search bar smooth hover card animations, and error alert
+messages for contact form. Can you write the CSS code for this?
+Response: I will now update your styles.css file to include styles for the project search bar, smooth card animations on hover, and custom
+alert/error styling for the contact form.
+I have updated css/styles.css with:
+Project Search Bar Styling: Full styling for #project-search including focus states and dark theme support.
+Card Animations: Added smooth lift (translateY) and shadow transitions when hovering over .project-card.
+4/8
+https://gemini.google.com/app/2825abb75e524042
+25 /10 /2026، 11:53 
+م
+Web Dev Assignment 2 Guide
+Form Alert & Validation Styles: Added .alert-error, .alert-success, and .invalid input states to handle feedback visually.
+Would you like help updating your script.js file next to trigger these form validation alerts and search functionality?
+User prompt: I need js/script.js code to connect everything. I want the code to do 3 things: 1. Theme toggle with localStorage saving. 2. Live
+project search filter when user type in search input. 3. Form validation with loading spinner and alert message. 4. Can you give me full clean JS
+code?
+Response: Here is the complete js/script.js code that ties all three features together cleanly.
+document.addEventListener('DOMContentLoaded', () => {
+    // ========================================================
+    // 1. Theme Toggle with LocalStorage
+    // ========================================================
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    // Check saved theme from localStorage on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+    }
+    // Toggle theme state on click
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const isDark = body.classList.contains('dark-theme');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    }
+    // ========================================================
+    // 2. Live Project Search Filter
+    // ========================================================
+    const searchInput = document.getElementById('project-search');
+    const projectCards = document.querySelectorAll('.project-card');
+    const noProjectsMsg = document.getElementById('no-projects-msg');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            let visibleCount = 0;
+            projectCards.forEach(card => {
+                const title = card.querySelector('h3') ? card.querySelector('h3').textContent.toLowerCase() : '';
+                const description = card.querySelector('p') ? card.querySelector('p').textContent.toLowerCase() : '';
+                // Show card if title or description matches search term
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            // Toggle empty state message feedback
+            if (noProjectsMsg) {
+                if (visibleCount === 0) {
+                    noProjectsMsg.classList.remove('hidden');
+                } else {
+                    noProjectsMsg.classList.add('hidden');
+                }
+            }
+        });
+    }
+5/8
+https://gemini.google.com/app/2825abb75e524042
+25 /10 /2026، 11:53 
+م
+Web Dev Assignment 2 Guide
+    // ========================================================
+    // 3. Contact Form Validation with Loading State & Alerts
+    // ========================================================
+    const contactForm = document.getElementById('contact-form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    // Create container for alert feedback messages if it doesn't exist
+    let formAlertContainer = document.getElementById('form-alert');
+    if (!formAlertContainer && contactForm) {
+        formAlertContainer = document.createElement('div');
+        formAlertContainer.id = 'form-alert';
+        contactForm.prepend(formAlertContainer);
+    }
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Clear previous alerts and errors
+            formAlertContainer.innerHTML = '';
+            [nameInput, emailInput, messageInput].forEach(input => {
+                if (input) input.classList.remove('invalid');
+            });
+            const nameVal = nameInput ? nameInput.value.trim() : '';
+            const emailVal = emailInput ? emailInput.value.trim() : '';
+            const messageVal = messageInput ? messageInput.value.trim() : '';
+            // Simple email format check using standard regex
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            // 1. Validate Form Inputs
+            if (!nameVal || !emailVal || !messageVal) {
+                showAlert('Please fill in all required fields.', 'error');
+                highlightEmptyFields([nameInput, emailInput, messageInput]);
+                return;
+            }
+            if (!emailRegex.test(emailVal)) {
+                showAlert('Please enter a valid email address.', 'error');
+                if (emailInput) emailInput.classList.add('invalid');
+                return;
+            }
+            // 2. Show Loading Feedback State
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn ? submitBtn.textContent : 'Send Message';
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+            }
+            // 3. Simulate API / Submission Network Request
+            setTimeout(() => {
+                // Success Response
+                showAlert('Thank you! Your message has been sent successfully.', 'success');
+                contactForm.reset();
+                // Restore Submit Button
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalBtnText;
+                }
+            }, 1200);
+        });
+    }
+    // Helper: Render Alert Box
+    function showAlert(message, type) {
+6/8
+https://gemini.google.com/app/2825abb75e524042
+25 /10 /2026، 11:53 
+م
+Web Dev Assignment 2 Guide
+        if (!formAlertContainer) return;
+        formAlertContainer.innerHTML = `
+            <div class="alert ${type === 'error' ? 'alert-error' : 'alert-success'}">
+                ${message}
+            </div>
+        `;
+    }
+    // Helper: Highlight invalid empty inputs
+    function highlightEmptyFields(inputs) {
+        inputs.forEach(input => {
+            if (input && !input.value.trim()) {
+                input.classList.add('invalid');
+            }
+        });
+    }
+});
+HTML Requirements Reminder
+To make sure the search bar and alert container map seamlessly to this JavaScript file:
+1. Ensure your search input has id="project-search".
+2. Ensure your empty state message element has id="no-projects-msg" and class hidden.
+3. Ensure your project cards have the .project-card class with <h3> and <p> tags inside.
+User prompt:  I want to understand how it works so I don't just copy how localStorage.getItem('theme') actually works in JS? And how the live
+search filter compare project names with includes()? Explain short 
+Response: Here is a straightforward breakdown of how both functions work under the hood.
+1. How localStorage.getItem('theme') Works
+localStorage is a built-in key-value storage system inside your web browser that persists even when the page is refreshed or closed.
+Key-Value Pair: It works like a simple dictionary. The key is "theme", and the value is a string (e.g., "dark" or "light").
+Reading the Value: localStorage.getItem('theme') looks up the "theme" key:
+If it exists, it returns the stored string value (e.g., "dark").
+If the key doesn't exist yet (like on a user's first visit), it returns null.
+Execution Flow:
+1. JavaScript checks localStorage.getItem('theme') as soon as the page loads.
+2. If the return value is "dark", JS adds the .dark-theme class to document.body.
+3. When the user clicks the toggle button, localStorage.setItem('theme', 'dark') or localStorage.setItem('theme',
+'light') updates that saved key.
+2. How includes() Filters Project Names
+The .includes() method is a standard JavaScript string method that checks if one string exists inside another string.
+Substring Matching: "SilverNest".includes("silver") would normally return false because JavaScript string comparisons are
+case-sensitive.
+Converting to Lowercase: To make search case-insensitive, both the user's input and the project's title are converted to lowercase using
+.toLowerCase() before checking:
+const title = card.querySelector('h3').textContent.toLowerCase(); // "silvernest"
+const searchTerm = e.target.value.toLowerCase().trim();           // "silver"
+Comparison:
+title.includes(searchTerm) // "silvernest".includes("silver") -> true
+7/8
+https://gemini.google.com/app/2825abb75e524042
+25 /10 /2026، 11:53 
+م
+Web Dev Assignment 2 Guide
+If includes() returns true, the code sets card.style.display = 'block' (showing the card). If false, it sets card.style.display =
+'none' (hiding the card).
+User prompt: , the code works fine now after I changed some class namesneed to write documentation files. Can you help me make docs/ai
+usage-report.md with usage table + academic integrity declaration, and docs/technical-documentation.md
+Response: I will now generate the two updated documentation files (docs/ai-usage-report.md and docs/technical-documentation.md)
+reflecting your JavaScript interactive features, live search implementation, and form validation error handling.
+I have generated both documentation files for your repository:
+1. docs/ai-usage-report.md: Contains the structured usage log, benefits, learning outcomes, and the mandatory signed AI Usage
+Declaration (remember to fill in your last name and student ID).
+2. docs/technical-documentation.md: Details the directory structure, architecture overview, and technical breakdowns of your JavaScript
+interactivity features (localStorage, live search filtering, form validation, and animations).
+Make sure to export your AI chat evidence into id-name-assignment2-ai-evidence.zip before submitting on Blackboard!
+User prompt: I need to update my main README.md file to explain new features we added in Assignment 2 and how to run site locally. Can you
+write full README structure for me??
+Response: I will now update your README.md file to reflect all the new interactive features added in Assignment 2, including dark mode
+persistence, live project search, interactive form validation, setup instructions, and AI disclosure reference.
+I have created a complete README.md file tailored to your Assignment 2 submission requirements. It highlights your new interactive features (Dark
+Mode, Live Search, Form Validation, Animations), details the file directory structure, provides clear setup instructions, and includes the required
+summary reference to your docs/ai-usage-report.md.
+8/8
+https://gemini.google.com/app/2825abb75e524042
